@@ -2,46 +2,39 @@
  * Created by aayush on 12/11/14.
  */
 
-
-// Fetching the form parameters to be passed in the Google Spreadsheet
-$(document).ready(function() {
-    var params = window.location.search.slice(1);
-    params = params.split('&');
-    var obj = {};
-    params.forEach(function(val){
-        val = val.split('=');
-        obj[val[0]] = val[1];
-    });
-    // Sending Data to Google Spreadsheet
-    $("#send").click(function(){
-        postDataToGoogle(obj);
-    });
-});
-
 // Function to transfer data directly to Google Spreadsheet
-function postDataToGoogle(params) {
+function postDataToGoogleForm() {
 
-    console.log(params)
-    //params.id
-    //params.name
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var contactNumber = $('#contact-number').val();
+    var subject = $('#subject').val();
+    var message = $('#message').val();
 
-    var name = $('#Name').val();
-    console.log(name);
-    var message = $('#Message').val();
-    console.log(message);
-    var pid = params.id;
     $.ajax({
-        url: "https://docs.google.com/a/indix.com/forms/d/1XPLRRcUs2GdiRYVhVobRINKFBqOYU4mikjmvFSzlIaA/formResponse",
+        url: "https://docs.google.com/forms/d/10dr9_gWJr-44u-9L-jO_lfclVBEYJxQbTxm4toQ8DJA/formResponse",
         data: {
-            "entry.2054576694": name,
-            "entry.1381512905": message,
-            "entry.938557947": pid
+            "entry.1861170508": name,
+            "entry.2043681964": email,
+            "entry.1379320226": contactNumber,
+            "entry.709559213": subject,
+            "entry.1493384257": message
         },
-        type: "POST",
-        success: function(data) {
-            console.log("form submitted");
-            window.location.replace("thankYou.html");
 
+        crossDomain:true,
+        type: "POST",
+        dataType: "jsonp",
+
+        success: function(data) {
+            alert("Your query has been recorded :) We will get back to you soon ! ");
+        },
+        error: function() {
+            alert("Form not Submitted. Please try again !")
         }
     });
 }
+
+// Sending Data to Google Spreadsheet
+$("#btnContactUs").click(function(){
+    postDataToGoogleForm();
+});
