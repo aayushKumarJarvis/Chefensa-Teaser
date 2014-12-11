@@ -3,9 +3,9 @@ a,.tp-caption a.btn:hover {
 	color: #d03636;
 }
 .top-nav-collapse {
-	background: white;
-    opacity: 0.7;
-    border-bottom: 1px solid #ebebeb
+	background: #d03636;
+    /*opacity: 0.9;*/
+    border-bottom: 1px solid #28c3ab;
 }
 
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
@@ -31,7 +31,7 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 
 footer {
     background-color: #d03636;
-    opacity: 0.7;
+    /*opacity: 0.7;*/
 }
 
 .btn-skin {
