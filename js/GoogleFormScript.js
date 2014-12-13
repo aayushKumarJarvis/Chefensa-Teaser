@@ -26,15 +26,15 @@ function postDataToGoogleForm() {
         dataType: "jsonp",
 
         success: function(data) {
-            alert("Your query has been recorded :) We will get back to you soon ! ");
-        },
-        error: function() {
-            alert("Form not Submitted. Please try again !")
+            console.log("Form Successfully Submitted !!")
+
         }
     });
+
 }
 
 // Sending Data to Google Spreadsheet
 $("#btnContactUs").click(function(){
     postDataToGoogleForm();
+
 });
