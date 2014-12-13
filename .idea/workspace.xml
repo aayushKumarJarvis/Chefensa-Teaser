@@ -26,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="32" selection-start="2301" selection-end="2301" vertical-scroll-proportion="0.4074703" vertical-offset="735" max-vertical-offset="7455">
+            <state line="236" column="59" selection-start="8070" selection-end="8070" vertical-scroll-proportion="0.5925297" vertical-offset="3191" max-vertical-offset="7455">
               <folding>
                 <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -40,11 +40,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="font-awesome.min.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/font-awesome/css/font-awesome.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="GoogleFormScript.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/GoogleFormScript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <folding />
+            <state line="41" column="0" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="705">
+              <folding>
+                <marker date="1418498835436" expanded="true" signature="953:1033" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,7 +63,7 @@
       <file leaf-file-name="team.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/team.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="42" selection-start="1600" selection-end="1618" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1965">
+            <state line="56" column="42" selection-start="1600" selection-end="1618" vertical-scroll-proportion="-15.625" vertical-offset="465" max-vertical-offset="1965">
               <folding />
             </state>
           </provider>
@@ -61,7 +72,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="13035">
+            <state line="321" column="1" selection-start="5480" selection-end="5480" vertical-scroll-proportion="0.0" vertical-offset="4590" max-vertical-offset="13035">
               <folding />
             </state>
           </provider>
@@ -92,8 +103,8 @@
         <option value="$PROJECT_DIR$/team.html" />
         <option value="$PROJECT_DIR$/send_form_email.php" />
         <option value="$PROJECT_DIR$/color/default.css" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/GoogleFormScript.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -160,20 +171,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chefensa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chefensa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="font-awesome" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -192,35 +189,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chefensa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chefensa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chefensa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chefensa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="color" />
+              <option name="myItemId" value="less" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -301,13 +270,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/color/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="81" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="354" column="4" selection-start="12674" selection-end="12674" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7425">
@@ -326,7 +288,9 @@
     <entry file="file://$PROJECT_DIR$/js/GoogleFormScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="7" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="630">
-          <folding />
+          <folding>
+            <marker date="1418498835436" expanded="true" signature="953:1033" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -369,7 +333,9 @@
     <entry file="file://$PROJECT_DIR$/js/GoogleFormScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="26" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="660">
-          <folding />
+          <folding>
+            <marker date="1418498835436" expanded="true" signature="953:1033" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -676,11 +642,6 @@
         <state line="2" column="9" selection-start="26" selection-end="26" vertical-scroll-proportion="0.047923323" vertical-offset="0" max-vertical-offset="960" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/font-awesome/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="793" selection-end="793" vertical-scroll-proportion="0.44045678" vertical-offset="0" max-vertical-offset="20265" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/send_form_email.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="4" selection-start="439" selection-end="439" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1125" />
@@ -693,7 +654,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/team.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="42" selection-start="1600" selection-end="1618" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1965">
+        <state line="56" column="42" selection-start="1600" selection-end="1618" vertical-scroll-proportion="-15.625" vertical-offset="465" max-vertical-offset="1965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/GoogleFormScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="705">
+          <folding>
+            <marker date="1418498835436" expanded="true" signature="953:1033" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/font-awesome/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/font-awesome/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="22" selection-start="639" selection-end="639" vertical-scroll-proportion="0.2538071" vertical-offset="0" max-vertical-offset="20265">
           <folding />
         </state>
       </provider>
@@ -707,21 +691,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/GoogleFormScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+        <state line="321" column="1" selection-start="5480" selection-end="5480" vertical-scroll-proportion="0.0" vertical-offset="4590" max-vertical-offset="13035">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="32" selection-start="2301" selection-end="2301" vertical-scroll-proportion="0.4074703" vertical-offset="735" max-vertical-offset="7455">
+        <state line="236" column="59" selection-start="8070" selection-end="8070" vertical-scroll-proportion="0.5925297" vertical-offset="3191" max-vertical-offset="7455">
           <folding>
             <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />

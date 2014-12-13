@@ -26,7 +26,7 @@ function postDataToGoogleForm() {
         dataType: "jsonp",
 
         success: function(data) {
-            console.log("Form Successfully Submitted !!")
+            console.log("Form Successfully Submitted !!");
 
         }
     });
@@ -35,6 +35,7 @@ function postDataToGoogleForm() {
 
 // Sending Data to Google Spreadsheet
 $("#btnContactUs").click(function(){
-    postDataToGoogleForm();
+    if(postDataToGoogleForm())
+        alert("Thanks for your response !");
 
 });
