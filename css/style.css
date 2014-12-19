@@ -84,7 +84,7 @@ a:focus {
 }
 
 .navbar-brand h1{
-  color: #d03636;
+  color: #ed5701;
   font-size: 20px;
   line-height: 40px;
 
@@ -95,7 +95,7 @@ a:focus {
 }
 
 .nav.navbar-nav {
-    background-color: #d03636;
+    background-color: #ed5701;
 }
 
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
@@ -304,7 +304,7 @@ hr {
 
 }
 h2 {
-    color: #d03636;
+    color: #ed5701;
 }
 .section-heading i {
 	margin-bottom: 20px;
