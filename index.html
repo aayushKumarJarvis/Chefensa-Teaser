@@ -39,6 +39,15 @@
     </script>-->
 </head>
 
+<!--<script>
+
+    $('.nav a').on('click', function(){
+        $(".btn-navbar").click(); //bootstrap 2.x
+        $(".navbar-toggle").click() //bootstrap 3.x by Richard
+    });
+
+</script>-->
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 	<!-- Preloader -->
 	<div id="preloader">
@@ -63,9 +72,9 @@
                                color: white;
                                background: #ed5017;
                                width: 140px;
-                               height: 55px;
-                               padding-top: 10px;
-                               margin-top: -10px;
+                               height: 45px;
+
+                               /*margin-top: -10px*/;
                                text-align: left;
                                ">Chefensa</h1>
                 </a>
@@ -73,14 +82,14 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse" style="color: #ed5017">
-      <ul class="nav navbar-nav" style="background-color: #ed5017" >
-        <li><a href="#intro">Home</a></li>
-        <li><a href="#aboutChefensa">About Us</a></li>
-        <li><a href="#howItWorks">How it Works</a></li>
-        <li><a href="#chefezars">Chefs</a></li>
-		<li><a href="#service">Hungry Souls</a></li>
-		<li><a href="#contact">Contact</a></li>
-   <!--     <li class="dropdown">
+      <ul class="nav navbar-nav navbar-collapse" style="background-color: #ed5017" >
+        <li><a data-toggle="collapse" data-target=".nav-collapse" href="#intro">Home</a></li>
+        <li><a data-toggle="collapse" data-target=".nav-collapse" href="#aboutChefensa">About Us</a></li>
+        <li><a data-toggle="collapse" data-target=".nav-collapse" href="#howItWorks">How it Works</a></li>
+        <li><a data-toggle="collapse" data-target=".nav-collapse" href="#chefezars">Chefs</a></li>
+		<li><a data-toggle="collapse" data-target=".nav-collapse" href="#service">Hungry Souls</a></li>
+		<li><a data-toggle="collapse" data-target=".nav-collapse" href="#contact">Contact</a></li>
+       <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="#">Example menu</a></li>
@@ -117,7 +126,7 @@
 	<!-- /Section: intro -->
 
     <!---/Section: About Chefensa -->
-    <section id="aboutChefensa" class="home-section text-center bg-gray" style="background: #ffffff">
+    <section id="aboutChefensa" class="home-section text-center bg-gray" style="background: #ffffff;">
 
         <div class="heading-about">
             <div class="container">
@@ -153,12 +162,18 @@
             </div>
 
         </div>
+
+        <div class="page-scroll">
+            <a href="#howItWorks" class="btn btn-circle" style="color: #ed5017">
+                <i class="fa fa-angle-double-down animated"></i>
+            </a>
+        </div>
     </section>
 
 	<!-- /Section: about -->
 	
 	<!---/Section: How it works-->
-    <section id="howItWorks" class="home-section text-center bg-gray" style="background: #ffffff">
+    <section id="howItWorks" class="home-section text-center bg-gray" style="background: #ffffff;">
 
         <div class="heading-about">
             <div class="container">
@@ -190,6 +205,14 @@
             </div>
 
         </div>
+
+        <div class="page-scroll">
+            <a href="#chefezars" class="btn btn-circle" style="color: #ed5017;">
+                <i style="margin-top: -30px" class="fa fa-angle-double-down animated"></i>
+            </a>
+        </div>
+
+
     </section>
 
 	<!---/Section: How it works-->
@@ -288,10 +311,17 @@
                 </div>
             </div>
         </div>
+
+        <div class="page-scroll">
+            <a href="#service" class="btn btn-circle" style="color: #ed5017">
+                <i class="fa fa-angle-double-down animated"></i>
+            </a>
+        </div>
+
     </section>
 
 	<!-- Section: services -->
-    <section id="service" class="home-section text-center bg-gray" style="background: #ffffff">
+    <section id="service" class="home-section text-center bg-gray" style="background: #ffffff;">
 		
 		<div class="heading-about">
 			<div class="container">
@@ -373,11 +403,18 @@
 
         </div>		
 		</div>
+
+        <div class="page-scroll">
+            <a href="#contact" class="btn btn-circle" style="color: #ed5017">
+                <i class="fa fa-angle-double-down animated"></i>
+            </a>
+        </div>
+
 	</section>
 
 
 	<!-- Section: contact -->
-    <section id="contact" class="home-section text-center bg-gray" style="background: #ffffff">
+    <section id="contact" class="home-section text-center bg-gray" style="background: #ffffff;">
 		<div class="heading-contact">
 			<div class="container">
 			<div class="row">
@@ -524,14 +561,22 @@
 	</footer>-->
 
     <!-- Core JavaScript Files -->
+
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>	
 	<script src="js/jquery.scrollTo.js"></script>
 	<script src="js/wow.min.js"></script>
     <script src="js/GoogleFormScript.js"></script>
+    <script src="js/CollapsibleLists.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.js"></script>
+    <script type="text/javascript">
+        $(".navbar-nav li a").click(function(){
+            $(".navbar-toggle").click();
+        });
+    </script>
 
 </body>
 
