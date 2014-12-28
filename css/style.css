@@ -294,10 +294,10 @@ hr {
 
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .container {
-        width: 780px;
-    }
+        width: 765  px;
+    }*/
 /*#service {
     background: url(../img/bg3.jpg) no-repeat;
     background-size: cover;
@@ -444,6 +444,7 @@ h2 {
         float: left;
     }
 }
+
 
 .boxed-grey {
 	background: #f9f9f9;
