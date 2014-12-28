@@ -236,7 +236,7 @@ a:focus {
 }
 
 #load {
-	z-index: 9999;
+  z-index: 9999;
   background-color: #FF4136;
   opacity: 0.75;
   width: 10px;
@@ -281,19 +281,23 @@ hr {
 
 .videoWrapper {
     position: relative;
-    padding-bottom: 36.25%;
+    padding-bottom: 44.25%;
     height: 0;
 }
 .videoWrapper iframe,
 .videoWrapper object,
 .videoWrapper embed {
     position: relative;
-    top: -30px;
+    top: -20px;
     left: 0;
     width: 60%;
-    
+
 }
 
+@media (min-width: 768px) {
+    .container {
+        width: 780px;
+    }
 /*#service {
     background: url(../img/bg3.jpg) no-repeat;
     background-size: cover;
