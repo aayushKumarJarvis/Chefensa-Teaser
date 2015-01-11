@@ -149,15 +149,29 @@
                     <hr class="marginbot-50">
                 </div>
             </div>
-            <div class="row" style="font-size: 18px">
-                <i><font color="#ed5017">"Mummy, I am hungry!"</font></i> is not just a phrase, it defines our entire childhood!<br><br>
-
-                How many times a day we long for that homemade food which is treat for the taste buds and easy on stomach. We either are too busy to cook it ourselves or miss that someone who used to cook it for us.
-                We at Chefensa, want to give you similar food experience at your doorstep. Enjoy home style dishes prepared by best of the chefs near you.<br><br>
-
-                Work hard, play hard or just sleep hard. Your food has been taken care of . . .<br><br>
-
-                <font color="#ed5017">Chefensa &nbsp; . . .&nbsp;with Love!</font>
+            <div class="displayDivOnClick">
+                <table>
+                    <tr>
+                        <td>
+                            <div style="background-color: white; padding: 5px;">
+                                <a id="myHeader1" href="javascript:showonlyone('newboxes1');" >Our Mission</a>
+                            </div>
+                            <div class="newboxes" id="newboxes1" style="border: 1px solid black; background-color: #CCCCCC; display: block;padding: 5px;">Div #1</div>
+                        </td>
+                        <td>
+                            <div style="background-color: white; padding: 5px;">
+                                <a id="myHeader2" href="javascript:showonlyone('newboxes2');" >Our Story</a>
+                            </div>
+                            <div class="newboxes" id="newboxes2" style="border: 1px solid black; background-color: #CCCCCC; display: none;padding: 5px;">Div #2</div>
+                        </td>
+                        <td>
+                            <div style="background-color: white; padding: 5px;">
+                                <a id="myHeader3" href="javascript:showonlyone('newboxes3');" >Our Responsibility</a>
+                            </div>
+                            <div class="newboxes" id="newboxes3" style="border: 1px solid black; background-color: #CCCCCC; display: none;padding: 5px;">Div #3</div>
+                        </td>
+                    </tr>
+                </table>
 
             </div>
 
@@ -545,6 +559,23 @@
         $(".navbar-nav li a").click(function(){
             $(".navbar-toggle").click();
         });
+    </script>
+
+    <script>
+        function showonlyone(thechosenone) {
+            var newboxes = document.getElementsByTagName("div");
+            for(var x=0; x<newboxes.length; x++) {
+                name = newboxes[x].getAttribute("class");
+                if (name == 'newboxes') {
+                    if (newboxes[x].id == thechosenone) {
+                        newboxes[x].style.display = 'block';
+                    }
+                    else {
+                        newboxes[x].style.display = 'none';
+                    }
+                }
+            }
+        }
     </script>
 </body>
 

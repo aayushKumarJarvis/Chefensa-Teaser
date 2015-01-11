@@ -667,7 +667,10 @@ Parallax
     transition: all .3s ease-in-out;*/
 }
 
-
+.displayDivOnClick table {
+    margin: 0 auto;
+    width: 100%;
+}
 .btn-circle {
     width: 70px;
     height: 70px;
