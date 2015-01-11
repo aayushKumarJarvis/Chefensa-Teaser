@@ -39,15 +39,6 @@
     </script>-->
 </head>
 
-<!--<script>
-
-    $('.nav a').on('click', function(){
-        $(".btn-navbar").click(); //bootstrap 2.x
-        $(".navbar-toggle").click() //bootstrap 3.x by Richard
-    });
-
-</script>-->
-
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 	<!-- Preloader -->
 	<div id="preloader">
@@ -71,10 +62,10 @@
                     		   font-size: 30px;
                                color: white;
                                background: #ed5017;
-                               width: 120px;
-                               height: 45px;
-
-                               /*margin-top: -10px*/;
+                               width: 140px;
+                               height: 55px;
+                               padding-top: 10px;
+                               margin-top: -10px;
                                text-align: left;
                                ">Chefensa</h1>
                 </a>
@@ -82,14 +73,14 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse" style="color: #ed5017">
-      <ul class="nav navbar-nav navbar-collapse" style="background-color: #ed5017" >
+      <ul class="nav navbar-nav" style="background-color: #ed5017" >
         <li><a href="#intro">Home</a></li>
         <li><a href="#aboutChefensa">About Us</a></li>
         <li><a href="#howItWorks">How it Works</a></li>
         <li><a href="#chefezars">Chefs</a></li>
 		<li><a href="#service">Hungry Souls</a></li>
 		<li><a href="#contact">Contact</a></li>
-       <!-- <li class="dropdown">
+   <!--     <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="#">Example menu</a></li>
@@ -104,19 +95,20 @@
         <!-- /.container -->
     </nav>
 
-	<!-- Section: intro -->
-    <section id="intro" class="intro" style="height:100%">
 
-		<div class="slogan">
-			<link href='http://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
-			<h2 style="font-family: Rancho;
-                       text-transform: capitalize;
-                       font-style: normal">
-                       <span class="text_color">Chefensa</span> </h2>
-			<h4 style="text-transform: capitalize">Explore home style food cooked by passionate chefs around you</h4>
-            <!--<iframe src="http://www.youtube.com/embed/g8evyE9TuYk?html5=1"
-             ></iframe>-->
-		</div>
+
+	<!-- Section: intro -->
+    <section id="intro" class="intro" style="height:80%;">
+		<div class="slogan" style="background-color:rgba(0,0,0,0.6); padding: 20px; margin:auto; width:80%;text-shadow: 2px -1px 1px rgba(0, 0, 0, 1);">
+			<h3 style="text-transform: capitalize;color:#fff;font-family:arimo;font-family:'times new roman'">Are you a cooking enthusiast residing near Koramangala, Indiranagar or HSR Layout?</h3>
+			<p style="text-transform: capitalize;font-family:'times new roman';color:#fff; font-size:17px">Sign up with us to be the Food Entrepreneur you always wanted to be.</p>
+            <form class="form-inline">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="your@email.com" style="height: 46px;font-size: 18px;font-family: 'Lato', sans-serif;letter-spacing: 1px;border-radius: 0px;">
+              </div>
+              <button type="submit" class="btn btn-danger btn-lg" style="margin-left:30px; background-color:#ed5017">SIGN UP</button>
+            </form>
+  		</div>
 		<div class="page-scroll">
 			<a href="#aboutChefensa" class="btn btn-circle">
 				<i class="fa fa-angle-double-down animated"></i>
@@ -126,13 +118,21 @@
 	<!-- /Section: intro -->
 
     <!---/Section: About Chefensa -->
-    <section id="aboutChefensa" class="home-section text-center bg-gray" style="background: #ffffff;">
+    <section id="aboutChefensa" class="home-section text-center bg-gray" style="background: #ffffff">
 
         <div class="heading-about">
             <div class="container">
+            <div class="row" style="margin-top:-80px; margin-bottom:40px">
+                <div class="col-md-1">
+                    <a href="#" style="margin-right:10px;"><i class="fa fa-facebook-square fa-2x fblink"></i></a>
+                    <a href="#"><i class="fa fa-envelope fa-2x mailicon"></i></a>
+                </div>
+                <div class="col-md-11">
+                    <p style="font-size:large;color:#222">Chefensa is the technology and logistics platform which delivers the locally sourced home-style food from the best of the chefs near you. We are coming soon on Google Play Store and Apple App Store.</p>
+                </div>
+            </div>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <!--<div class="wow bounceInDown" data-wow-delay="0.4s">-->
                             <div class="section-heading">
                                 <h2 style="color: #ed5017">About Us</h2>
                                 <i class="fa fa-2x fa-angle-down"></i>
@@ -162,18 +162,12 @@
             </div>
 
         </div>
-
-        <div class="page-scroll">
-            <a href="#howItWorks" class="btn btn-circle" style="color: #ed5017">
-                <i class="fa fa-angle-double-down animated"></i>
-            </a>
-        </div>
     </section>
 
 	<!-- /Section: about -->
 	
 	<!---/Section: How it works-->
-    <section id="howItWorks" class="home-section text-center bg-gray" style="background: #ffffff;">
+    <section id="howItWorks" class="home-section text-center bg-gray" style="background: #ffffff">
 
         <div class="heading-about">
             <div class="container">
@@ -205,14 +199,6 @@
             </div>
 
         </div>
-
-        <div class="page-scroll">
-            <a href="#chefezars" class="btn btn-circle" style="color: #ed5017;">
-                <i style="margin-top: -30px" class="fa fa-angle-double-down animated"></i>
-            </a>
-        </div>
-
-
     </section>
 
 	<!---/Section: How it works-->
@@ -311,17 +297,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="page-scroll">
-            <a href="#service" class="btn btn-circle" style="color: #ed5017">
-                <i class="fa fa-angle-double-down animated"></i>
-            </a>
-        </div>
-
     </section>
 
 	<!-- Section: services -->
-    <section id="service" class="home-section text-center bg-gray" style="background: #ffffff;">
+    <section id="service" class="home-section text-center bg-gray" style="background: #ffffff">
 		
 		<div class="heading-about">
 			<div class="container">
@@ -403,18 +382,11 @@
 
         </div>		
 		</div>
-
-        <div class="page-scroll">
-            <a href="#contact" class="btn btn-circle" style="color: #ed5017">
-                <i class="fa fa-angle-double-down animated"></i>
-            </a>
-        </div>
-
 	</section>
 
 
 	<!-- Section: contact -->
-    <section id="contact" class="home-section text-center bg-gray" style="background: #ffffff;">
+    <section id="contact" class="home-section text-center bg-gray" style="background: #ffffff">
 		<div class="heading-contact">
 			<div class="container">
 			<div class="row">
@@ -561,15 +533,12 @@
 	</footer>-->
 
     <!-- Core JavaScript Files -->
-
-
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>	
 	<script src="js/jquery.scrollTo.js"></script>
 	<script src="js/wow.min.js"></script>
     <script src="js/GoogleFormScript.js"></script>
-    <script src="js/CollapsibleLists.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.js"></script>
     <script type="text/javascript">
@@ -577,7 +546,6 @@
             $(".navbar-toggle").click();
         });
     </script>
-
 </body>
 
 </html>

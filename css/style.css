@@ -1,7 +1,7 @@
 
 /* ==== Google font ==== */
 @import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
-
+@import url('http://fonts.googleapis.com/css?family=Arimo');
 
 body {
     width: 100%;
@@ -236,7 +236,7 @@ a:focus {
 }
 
 #load {
-  z-index: 9999;
+	z-index: 9999;
   background-color: #FF4136;
   opacity: 0.75;
   width: 10px;
@@ -281,23 +281,19 @@ hr {
 
 .videoWrapper {
     position: relative;
-    padding-bottom: 44.25%;
+    padding-bottom: 36.25%;
     height: 0;
 }
 .videoWrapper iframe,
 .videoWrapper object,
 .videoWrapper embed {
     position: relative;
-    top: -20px;
+    top: -30px;
     left: 0;
     width: 60%;
-
+    
 }
 
-/*@media (min-width: 768px) {
-    .container {
-        width: 765  px;
-    }*/
 /*#service {
     background: url(../img/bg3.jpg) no-repeat;
     background-size: cover;
@@ -360,7 +356,7 @@ h2 {
 	width:100%;
 	position:relative;
 	
-	background: url(../img/bg4.jpg) no-repeat;
+	background: url(../img/bg.png) no-repeat;
     background-size: cover;
 }
 
@@ -444,7 +440,6 @@ h2 {
         float: left;
     }
 }
-
 
 .boxed-grey {
 	background: #f9f9f9;
@@ -663,13 +658,13 @@ Parallax
 ============================ */
 
 .btn {
-	border-radius: 0;
+/*	border-radius: 0;
     text-transform: uppercase;
     font-family: Montserrat,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;*/
 }
 
 
@@ -803,6 +798,12 @@ Parallax
     margin-top: 0;
 }
 
+.fblink,.mailicon {
+    color:#ed5017;
+}
+.fblink:hover {
+    color: #4c67a1;
+}
 
 /* Media queries */
 
