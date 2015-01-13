@@ -35,4 +35,12 @@
 		});
 	});
 
+	$("#our_mission_txt").show();
+	$(".tab").click(function(){
+		$(".tab").removeClass("current");
+		$(this).addClass("current");
+		$(".about_item").hide();
+		$("#"+this.id+"_txt").fadeIn();
+	});
+
 })(jQuery);

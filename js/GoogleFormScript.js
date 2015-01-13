@@ -32,10 +32,44 @@ function postDataToGoogleForm() {
     });
 
 }
+function postDataToGoogleForm_signup() {
+
+    var email = $('#signup_email').val();
+    console.log(email);
+    $.ajax({
+        url: "https://docs.google.com/forms/d/10dr9_gWJr-44u-9L-jO_lfclVBEYJxQbTxm4toQ8DJA/formResponse",
+        data: {
+            "entry.1861170508": " ",
+            "entry.2043681964": email,
+            "entry.1379320226": " ",
+            "entry.709559213": " ",
+            "entry.1493384257": " "
+        },
+
+        crossDomain:true,
+        type: "POST",
+        dataType: "jsonp",
+
+        success: function(data) {
+            console.log("Form Successfully Submitted !!");
+            return true;
+        },
+        error: function () {
+            console.log("Form error :(");
+            return false;
+        }
+    });
+    return true;
+}
 
 // Sending Data to Google Spreadsheet
 $("#btnContactUs").click(function(){
     if(postDataToGoogleForm())
         alert("Thanks for your response !");
-
 });
+
+$("#btn_signup").click(function(e){
+    if (e) e.preventDefault();
+    if(postDataToGoogleForm_signup())
+        alert("Thanks for signing up. We'll get back to you in a day or two..");
+})

@@ -6,25 +6,25 @@ if(isset($_POST['email'])) {
     $subject = "Form Input Entry";
 
     function died($error) {
-        
+
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";
         echo "These errors appear below.<br /><br />";
         echo $error."<br /><br />";
         echo "Please go back and fix these errors.<br /><br />";
         die();
     }
-     
-    
+
+
     if(!isset($_POST['message']) ||
        !isset($_POST['email']) ||
        !isset($_POST['name'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
-     
+
     $message = $_POST['message']; 
     $email_from = $_POST['email']; 
     $name = $_POST['name']; 
-     
+
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
@@ -43,18 +43,18 @@ if(isset($_POST['email'])) {
         died($error_message);
     }
     $message_mail = "Form details below.\n\n";
-     
+
     function clean_string($string) {
       $bad = array("content-type","bcc:","to:","cc:","href");
       return str_replace($bad,"",$string);
     }
-     
+
     $message_mail .= "First Name: ".clean_string($first_name)."\n";
     $message_mail .= "Email: ".clean_string($email_from)."\n";
     $message_mail .= "Telephone: ".clean_string($telephone)."\n";
     $message_mail .= "Comments: ".clean_string($comments)."\n";
-     
-     
+
+
 
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
@@ -63,7 +63,7 @@ mail($to, $subject, $message_mail, $headers);
 ?>
 
 Thank you for contacting us. We will be in touch with you very soon.
- 
+
 <?php
 }
 ?>

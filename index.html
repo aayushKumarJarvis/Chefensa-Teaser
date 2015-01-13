@@ -18,6 +18,9 @@
 
     <title>Chefensa - Changing the Way World Eats</title>
 
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/fav.png">
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
@@ -28,15 +31,6 @@
     <!-- Chefensa theme CSS -->
     <link href="css/style.css" rel="stylesheet">
 	<link href="color/default.css" rel="stylesheet">
-
-   <!-- <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>-->
-    <!--<script src="js/cyclotron.js" type="text/javascript"></script>-->
-
-    <!--<script type="text/javascript">
-        $(document).ready(function ($) {
-            $('.intro').cyclotron();
-        })
-    </script>-->
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
@@ -75,19 +69,12 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse" style="color: #ed5017">
       <ul class="nav navbar-nav" style="background-color: #ed5017" >
         <li><a href="#intro">Home</a></li>
+        <li><a href="#chefezars">Chefs</a></li>
         <li><a href="#aboutChefensa">About Us</a></li>
         <li><a href="#howItWorks">How it Works</a></li>
-        <li><a href="#chefezars">Chefs</a></li>
-		<li><a href="#service">Hungry Souls</a></li>
+        <li><a href="#service">Hungry Souls</a></li>
+        <li><a href="#faq">FAQ</a></li>
 		<li><a href="#contact">Contact</a></li>
-   <!--     <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Example menu</a></li>
-            <li><a href="#">Example menu</a></li>
-            <li><a href="#">Example menu</a></li>
-          </ul>
-        </li>-->
       </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -95,140 +82,40 @@
         <!-- /.container -->
     </nav>
 
-
-
 	<!-- Section: intro -->
-    <section id="intro" class="intro" style="height:80%;">
+    <section id="intro" class="intro" style="height:80%; margin-top:30px;">
 		<div class="slogan" style="background-color:rgba(0,0,0,0.6); padding: 20px; margin:auto; width:80%;text-shadow: 2px -1px 1px rgba(0, 0, 0, 1);">
 			<h3 style="text-transform: capitalize;color:#fff;font-family:arimo;font-family:'times new roman'">Are you a cooking enthusiast residing near Koramangala, Indiranagar or HSR Layout?</h3>
 			<p style="text-transform: capitalize;font-family:'times new roman';color:#fff; font-size:17px">Sign up with us to be the Food Entrepreneur you always wanted to be.</p>
-            <form class="form-inline">
+            <form class="form-inline" method="post">
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="your@email.com" style="height: 46px;font-size: 18px;font-family: 'Lato', sans-serif;letter-spacing: 1px;border-radius: 0px;">
+                <input type="email" id="signup_email" class="form-control" placeholder="your@email.com" style="height: 46px;font-size: 18px;font-family: 'Lato', sans-serif;letter-spacing: 1px;border-radius: 0px;">
               </div>
-              <button type="submit" class="btn btn-danger btn-lg" style="margin-left:30px; background-color:#ed5017">SIGN UP</button>
+              <a href="#" class="btn btn-danger btn-lg" id="btn_signup" style="margin-left:30px; background-color:#ed5017;text-shadow:none">SIGN UP</a>
             </form>
   		</div>
-		<div class="page-scroll">
-			<a href="#aboutChefensa" class="btn btn-circle">
-				<i class="fa fa-angle-double-down animated"></i>
-			</a>
-		</div>
     </section>
 	<!-- /Section: intro -->
 
-    <!---/Section: About Chefensa -->
-    <section id="aboutChefensa" class="home-section text-center bg-gray" style="background: #ffffff">
+    <section class="home-section text-center bg-gray" style="background: #ffffff">
 
         <div class="heading-about">
             <div class="container">
-            <div class="row" style="margin-top:-80px; margin-bottom:40px">
-                <div class="col-md-1">
-                    <a href="#" style="margin-right:10px;"><i class="fa fa-facebook-square fa-2x fblink"></i></a>
-                    <a href="#"><i class="fa fa-envelope fa-2x mailicon"></i></a>
-                </div>
-                <div class="col-md-11">
-                    <p style="font-size:large;color:#222">Chefensa is the technology and logistics platform which delivers the locally sourced home-style food from the best of the chefs near you. We are coming soon on Google Play Store and Apple App Store.</p>
-                </div>
-            </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                            <div class="section-heading">
-                                <h2 style="color: #ed5017">About Us</h2>
-                                <i class="fa fa-2x fa-angle-down"></i>
-
-                            </div>
-                        </div>
+                <div class="row" style="margin-top:-80px; margin-bottom:40px">
+                    <div class="col-md-1">
+                        <a href="https://www.facebook.com/Chefensa" target="_blank" style="margin-right:10px;"><i class="fa fa-facebook-square fa-2x fblink"></i></a>
+                        <a href="mailto:foodwithlove@chefensa.com?Subject=Sign%20me%20up" target="_top" ><i class="fa fa-envelope fa-2x mailicon"></i></a>
+                    </div>
+                    <div class="col-md-11">
+                        <p style="font-size:large;color:#222">Chefensa is the technology and logistics platform which delivers the locally sourced home-style food from the best of the chefs near you. We are coming soon on Google Play Store and Apple App Store.</p><br>
+                        <span id="chefezars"></span>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div>
-                    <hr class="marginbot-50">
-                </div>
-            </div>
-            <div class="displayDivOnClick">
-                <table>
-                    <tr>
-                        <td>
-                            <div style="background-color: white; padding: 5px;">
-                                <a id="myHeader1" href="javascript:showonlyone('newboxes1');" >Our Mission</a>
-                            </div>
-                            <div class="newboxes" id="newboxes1" style="border: 1px solid black; background-color: #CCCCCC; display: block;padding: 5px;">Div #1</div>
-                        </td>
-                        <td>
-                            <div style="background-color: white; padding: 5px;">
-                                <a id="myHeader2" href="javascript:showonlyone('newboxes2');" >Our Story</a>
-                            </div>
-                            <div class="newboxes" id="newboxes2" style="border: 1px solid black; background-color: #CCCCCC; display: none;padding: 5px;">Div #2</div>
-                        </td>
-                        <td>
-                            <div style="background-color: white; padding: 5px;">
-                                <a id="myHeader3" href="javascript:showonlyone('newboxes3');" >Our Responsibility</a>
-                            </div>
-                            <div class="newboxes" id="newboxes3" style="border: 1px solid black; background-color: #CCCCCC; display: none;padding: 5px;">Div #3</div>
-                        </td>
-                    </tr>
-                </table>
-
-            </div>
-
-        </div>
-    </section>
-
-	<!-- /Section: about -->
-	
-	<!---/Section: How it works-->
-    <section id="howItWorks" class="home-section text-center bg-gray" style="background: #ffffff">
-
-        <div class="heading-about">
-            <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <!--<div class="wow bounceInDown" data-wow-delay="0.4s">-->
-                            <div class="section-heading">
-                                <h2 style="color: #ed5017">How It Works</h2>
-                                <i class="fa fa-2x fa-angle-down"></i>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div>
-                    <hr class="marginbot-50">
-                </div>
-            </div>
-            <div class="row" style="font-size: 18px">
-               <div class="videoWrapper">
-				 <iframe width="620" height="375"
-					src="https://www.youtube.com/embed/KoQQnuCGdB8">
-				 </iframe>
-               </div>
-            </div>
-
-        </div>
-    </section>
-
-	<!---/Section: How it works-->
-	
-	<!-- /Section: services -->
-
-    <section id="chefezars" class="home-section text-center bg-gray" style="background: #ffffff">
-
-        <div class="heading-about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <!--<div class="wow bounceInDown" data-wow-delay="0.4s">-->
                             <div class="section-heading">
                                 <h2 style="color: #ed5017">Chefs</h2>
-                                <div style="color: #ed5017; font-size: 20px; text-transform: none;"><b><i>We are looking for passionate home chefs to join Chefensa Community</i></b></div>
+                                <div style="color: #ed5017; font-size: 20px; text-transform: none;"><b><i>We are looking for passionate home chefs to join the Chefensa Community</i></b></div>
                                 <i class="fa fa-2x fa-angle-down"></i>
 
                             </div>
@@ -312,6 +199,95 @@
             </div>
         </div>
     </section>
+
+    <!---/Section: About Chefensa -->
+    <section id="aboutChefensa" class="home-section text-center bg-gray" style="background: #ffffff">
+
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                            <div class="section-heading">
+                                <h2  style="color: #ed5017">About Us</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div>
+                    <hr class="marginbot-50">
+                </div>
+            </div>
+            <div class="displayDivOnClick">
+                <ol class="tabs" style="text-align: center;">
+                  <li class="tab current" id="our_mission" tab-index="1"><span>01 </span> Our Mission</li>
+                  <li class="tab" id="our_responsibility" tab-index="3"><span>02 </span> Our Responsibility</li>
+                </ol>
+                <div class="row about_item" id="our_mission_txt">
+                    <div class="col-md-6"><img src="img/bg4.jpg" style="width:100%;height:100%;"></div>
+                    <div class="col-md-6">
+                        <p>How many times a day we long for that homemade food which is treat for the taste buds and easy on stomach. We either are too busy to cook it ourselves or miss that someone who used to cook it for us.
+                        </p>
+                        <p>We at Chefensa, want to give you similar food experience at your doorstep. Enjoy home style dishes prepared by the best of the chefs near you.</p>
+                    </div>
+                </div>
+                <div class="row about_item" id="our_responsibility_txt">
+                    <div class="col-md-6"><img src="img/bg.png" style="width:100%;height:100%;"></div>
+                    <div class="col-md-6">
+                        <strong>Towards Chef Partners</strong>
+                        <p>You can set up your food shop on Chefensa. We will connect you with the large audience who can enjoy your food through our platform.We will take care of logistics and technology, you take care of food.</p>
+                        <strong>Towards Customers</strong>
+                        <p>The chefs associated with Chefensa have cleared the minimum quality benchmark set by our Quality Assurance team. The ingredients used by these chefs are of highest quality and we do regular checks to ensure that the food quality is always maintained. You just place your order and be relax. The tasty, healthy and hygienic food is coming right your way.</p>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+    <!-- /Section: about -->
+    
+    <!---/Section: How it works-->
+    <section id="howItWorks" class="home-section text-center bg-gray" style="background: #ffffff">
+
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <!--<div class="wow bounceInDown" data-wow-delay="0.4s">-->
+                            <div class="section-heading">
+                                <h2 style="color: #ed5017">How It Works</h2>
+                                <i class="fa fa-2x fa-angle-down"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div>
+                    <hr class="marginbot-50">
+                </div>
+            </div>
+            <div class="row" style="font-size: 18px">
+               <div class="videoWrapper">
+                 <iframe width="620" height="375"
+                    src="https://www.youtube.com/embed/KoQQnuCGdB8">
+                 </iframe>
+               </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!---/Section: How it works-->
+    
+    <!-- /Section: services -->
+
 
 	<!-- Section: services -->
     <section id="service" class="home-section text-center bg-gray" style="background: #ffffff">
@@ -398,6 +374,53 @@
 		</div>
 	</section>
 
+    <!-- Section: faq -->
+    <section id="faq" class="home-section text-center bg-gray" style="background: #ffffff">
+        <div class="heading-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="section-heading">
+                            <h2 style="color: #ed5017">FAQ</h2>
+                            <i class="fa fa-2x fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-5">
+                    <hr class="marginbot-50">
+                </div>
+            </div>
+            <div style="font-size:16px">
+                <dl>
+                    <dt>Who can join Chefensa?</dt>
+                    <dd>Chefensa is open to everyone who enjoys cooking.</dd>
+                    <br>
+                    <dt>Do I need any cooking qualification to join?</dt>
+                    <dd>No, you could be a professional chef or a home maker who just loves cooking. Your passion for cooking is the only criteria.</dd>
+                    <br>
+                    <dt>How will I join Chefensa?</dt>
+                    <dd>Give us a call or drop a mail. Tell us your specialty and what you love to cook. We will get in touch with you with our on boarding formalities.</dd>
+                    <br>
+                    <dt>Where and when do I have to cook?</dt>
+                    <dd>You will cook from the convenience of your home at time mutually suitable for both of us.</dd>
+                    <br>
+                    <dt>Do I need to cook daily?</dt>
+                    <dd>No, you just have to tell us the day before about your availability.</dd>
+                    <br>
+                    <dt>What quantity I have to cook?</dt>
+                    <dd>We do not have a minimum or maximum cap on the quantity of food as long as it matches our quality parameters and customer requirements. You can enlist as less as 3 meals or as high as 50 meals on Chefensa.</dd>
+                    <br>
+                    <dt>What benefits I will get?</dt>
+                    <dd>Apart from the monetary benefits, you will get appreciation and fame for your culinary skills.</dd>
+                </dl>
+            </div>
+        </div>        
+    </section>
+
 
 	<!-- Section: contact -->
     <section id="contact" class="home-section text-center bg-gray" style="background: #ffffff">
@@ -428,50 +451,50 @@
         <h6>Write to Us</h6>
             <div class="boxed-grey">
                 <form id="contact-form">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="name">
-                                Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <label style="float: left" for="email">
+                                    Email Address&nbsp;&&nbsp;</label>
+                                <label for="contact-number">
+                                    Contact Number
+                                </label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                    </span>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+                                    <input type="number" class="form-control" id="contact-number" placeholder="Enter Contact Number" required="required" /></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">
+                                    Subject</label>
+                                <select id="subject" name="subject" class="form-control" required="required">
+                                    <option value="na" selected="">Choose One:</option>
+                                    <option value="service">Refer a Friend</option>
+                                    <option value="suggestions">Suggestions</option>
+                                    <option value="product">Product Support</option>
+                                    <option value="joinus">Join Us</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label style="float: left" for="email">
-                                Email Address&nbsp;&&nbsp;</label>
-                            <label for="contact-number">
-                                Contact Number
-                            </label>
-                            <div class="input-group">
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                </span>
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
-                                <input type="number" class="form-control" id="contact-number" placeholder="Enter Contact Number" required="required" /></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Message</label>
+                                <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                    placeholder="Message"></textarea>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="subject">
-                                Subject</label>
-                            <select id="subject" name="subject" class="form-control" required="required">
-                                <option value="na" selected="">Choose One:</option>
-                                <option value="service">Refer a Friend</option>
-                                <option value="suggestions">Suggestions</option>
-                                <option value="product">Product Support</option>
-                                <option value="joinus">Join Us</option>
-                            </select>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-skin pull-right" id="btnContactUs" >
+                                Send Message</button>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="name">
-                                Message</label>
-                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-                                placeholder="Message"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <button type="submit" class="btn btn-skin pull-right" id="btnContactUs" >
-                            Send Message</button>
-                    </div>
-                </div>
                 </form>
             </div>
         </div>
@@ -490,7 +513,7 @@
 				<address>
 				  <strong>Phone: +91-9560663006</strong><br>
 				  <strong>Email: </strong><a href="mailto:foodwithlove@chefensa.com">foodwithlove@chefensa.com</a>
-				</address>	
+				</address>
 				<address>
 				  <strong>We're on social networks</strong><br>
                        	<ul class="company-social">
@@ -560,22 +583,14 @@
             $(".navbar-toggle").click();
         });
     </script>
-
     <script>
-        function showonlyone(thechosenone) {
-            var newboxes = document.getElementsByTagName("div");
-            for(var x=0; x<newboxes.length; x++) {
-                name = newboxes[x].getAttribute("class");
-                if (name == 'newboxes') {
-                    if (newboxes[x].id == thechosenone) {
-                        newboxes[x].style.display = 'block';
-                    }
-                    else {
-                        newboxes[x].style.display = 'none';
-                    }
-                }
-            }
-        }
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-58492803-1', 'auto');
+        ga('send', 'pageview');
     </script>
 </body>
 
