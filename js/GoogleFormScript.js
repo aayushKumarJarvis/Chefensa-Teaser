@@ -32,6 +32,7 @@ function postDataToGoogleForm() {
     });
 
 }
+
 function postDataToGoogleForm_signup() {
 
     var email = $('#signup_email').val();
@@ -50,10 +51,20 @@ function postDataToGoogleForm_signup() {
         type: "POST",
         dataType: "jsonp",
 
+        statusCode: {
+            200: function() {
+                return true;
+            },
+            300: function() {
+                return true;
+            }
+        },
+
         success: function(data) {
             console.log("Form Successfully Submitted !!");
             return true;
         },
+
         error: function () {
             console.log("Form error :(");
             return false;
@@ -62,14 +73,26 @@ function postDataToGoogleForm_signup() {
     return true;
 }
 
+ function validateEmail($email) {
+  var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+  if( !emailReg.test( $email ) ) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
 // Sending Data to Google Spreadsheet
 $("#btnContactUs").click(function(){
     if(postDataToGoogleForm())
         alert("Thanks for your response !");
 });
 
-$("#btn_signup").click(function(e){
-    if (e) e.preventDefault();
-    if(postDataToGoogleForm_signup())
-        alert("Thanks for signing up. We'll get back to you in a day or two..");
+$("#btn_signup").click(function(){
+    if(validateEmail($('#signup_email').val())) {
+        if(postDataToGoogleForm_signup())
+            alert("Thanks for signing up. We'll get back to you in a day or two..");
+    }else{
+        alert("Please enter valid email");
+    }
 })
