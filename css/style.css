@@ -828,15 +828,6 @@ Parallax
   border-color: #666;
 }
 
-
-.btn-default:hover,
-.btn-default:focus {
-    border: 1px solid #28c3ab;
-    outline: 0;
-    color: #000;
-    background-color: #28c3ab;
-}
-
 .btn-huge {
     padding: 25px;
     font-size: 26px;

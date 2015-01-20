@@ -73,9 +73,9 @@ function postDataToGoogleForm_signup() {
     return true;
 }
 
- function validateEmail($email) {
+function validateEmail($email) {
   var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-  if( !emailReg.test( $email ) ) {
+  if( $email=="" || !emailReg.test( $email ) ) {
     return false;
   } else {
     return true;
@@ -89,10 +89,40 @@ $("#btnContactUs").click(function(){
 });
 
 $("#btn_signup").click(function(){
-    if(validateEmail($('#signup_email').val())) {
-        if(postDataToGoogleForm_signup())
-            alert("Thanks for signing up. We'll get back to you in a day or two..");
+    var email_add = $('#signup_email').val();
+    if(validateEmail(email_add)) {
+        if(postDataToGoogleForm_signup()) {
+            $.ajax({
+                url:"send_mail.php",
+                type:"post",
+                data:{ email: email_add },
+                dataType:"json",
+                success : function(data) {
+                    if (data==true) {
+                        $('#signup_success_modal').modal("show");
+                        $('.signup_matter').hide();
+                        $('.social_matter').fadeIn();
+                    }
+                    else if(data==false) {
+                        console.log("Error: Mail not sent. Please let me know so that I can fix this.");
+                    }
+                    else {
+                        var err_msg = "<p>Please correct the following errors in the form and resubmit!<br><br>";
+                        for(var key in data) {
+                            err_msg = err_msg + "<b style='color:#D73D32'>" + key.charAt(0).toUpperCase() + key.slice(1)+"</b> : <span style='color:#666'>" + data[key] + "</span><br>";
+                        }
+                        err_msg = err_msg + "</p>";
+                        $('#signup_err_modal .modal-body').html(err_msg);
+                        $('#signup_err_modal').modal("show");
+                    }
+                },
+                error: function(exception) {
+                    $('#signup_err_modal .modal-body').html("Sorry, some internal error occured!<br> Please let me know about this so that we can fix it.");
+                    $('#signup_err_modal').modal("show");
+                }
+            });
+        }
     }else{
-        alert("Please enter valid email");
+        $('#signup_err_modal').modal("show");
     }
 })
