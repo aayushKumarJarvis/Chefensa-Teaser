@@ -28,12 +28,18 @@ if (count($errors)==0) {
     // until the link contained in it is clicked!
     $retval = $api->listSubscribe( $listId, $email, $merge_vars ,"html", false);
 
-    if ($api->errorCode){
+    if ($api->errorCode!=214 && $api->errorCode){
         error_log("Error Code : ".$api->errorCode);
         error_log("Error Msg : ".$api->errorMessage);
         echo false;
     } else {
-        echo true;
+        if($api->errorCode==214) {
+            $errors['Already Registered'] = "Your email id has already been registered with us.";
+            echo json_encode($errors);
+        }
+        else {
+            echo true;
+        }
     }
 } else {
     echo json_encode($errors);

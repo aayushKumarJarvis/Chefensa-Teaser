@@ -89,6 +89,7 @@ $("#btnContactUs").click(function(){
 });
 
 $("#btn_signup").click(function(){
+    var already_sub = false;
     var email_add = $('#signup_email').val();
     if(validateEmail(email_add)) {
         if(postDataToGoogleForm_signup()) {
@@ -107,17 +108,29 @@ $("#btn_signup").click(function(){
                         console.log("Error: Mail not sent. Please let me know so that I can fix this.");
                     }
                     else {
-                        var err_msg = "<p>Please correct the following errors in the form and resubmit!<br><br>";
+                        var err_msg = "";
                         for(var key in data) {
-                            err_msg = err_msg + "<b style='color:#D73D32'>" + key.charAt(0).toUpperCase() + key.slice(1)+"</b> : <span style='color:#666'>" + data[key] + "</span><br>";
+                            err_msg = err_msg + "<b style='color:#ed5017'>" + key.charAt(0).toUpperCase() + key.slice(1)+"</b> : <span style='color:#666'>" + data[key] + "</span><br>";
+                            if(key.charAt(0) == 'A') already_sub = true;
                         }
                         err_msg = err_msg + "</p>";
-                        $('#signup_err_modal .modal-body').html(err_msg);
-                        $('#signup_err_modal').modal("show");
+                        if(already_sub == true) {
+                            err_msg = "<p>"+err_msg;
+                            $('.signup_matter').hide();
+                            $('.social_matter').fadeIn();
+                            $('#already_registered_modal .modal-body').html(err_msg);
+                            $('#already_registered_modal').modal("show");
+                        }
+                        else{
+                            err_msg = "<p>Please correct the following errors in the form and resubmit!<br><br>"+err_msg;
+                            $('#signup_err_modal .modal-body').html(err_msg);
+                            $('#signup_err_modal').modal("show");
+                        }
                     }
                 },
                 error: function(exception) {
-                    $('#signup_err_modal .modal-body').html("Sorry, some internal error occured!<br> Please let me know about this so that we can fix it.");
+                    console.log(exception);
+                    $('#signup_err_modal .modal-body').html("Sorry, mail could not be sent to your email id. Please make sure to enter correct email address.<br>Please contact the administrator if problem persists.");
                     $('#signup_err_modal').modal("show");
                 }
             });

@@ -90,22 +90,6 @@
     			<p style="text-transform: capitalize;font-family:'Lato';color:#fff; font-size:17px">Sign up with us to be the Food Entrepreneur you always wanted to be.</p>
                 <div class="form-inline">
                   <div class="form-group">
-
-                    <!-- Begin MailChimp Signup Form -->
-                    <div id="mc_embed_signup">
-                    <form action="//chefensa.us10.list-manage.com/subscribe/post?u=09861def3947672902ffc027a&amp;id=c8f86bffee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                        <label for="mce-EMAIL">Subscribe to our mailing list</label>
-                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_09861def3947672902ffc027a_c8f86bffee" tabindex="-1" value=""></div>
-                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                        </div>
-                    </form>
-                    </div>
-
-                    <!--End mc_embed_signup-->
-
                     <input type="email" id="signup_email" class="form-control" placeholder="your@email.com" style="height: 46px;font-size: 18px;font-family: 'Lato', sans-serif;letter-spacing: 1px;border-radius: 0px;" />
                     <input type="submit" class="btn btn-danger btn-lg" id="btn_signup" style="margin-left:30px; background-color:#ed5017;text-shadow:none" value="SIGN UP" />
                   </div>
@@ -577,6 +561,7 @@
       </div>
     </div>
 
+<!-- SignUp Errors Modal -->
     <div class="modal fade" id="signup_err_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -586,6 +571,22 @@
           </div>
           <div class="modal-body">
             <span style="font-size:16px">Please enter a valid email address.</span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">OK!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="already_registered_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel" style="color:#49659f">Already Signed Up</h4>
+          </div>
+          <div class="modal-body">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">OK!</button>
